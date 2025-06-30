@@ -4,14 +4,10 @@ import threading
 import yt_dlp
 import os
 import shutil
-
-# FFMPEG_PATH = '/opt/homebrew/bin/ffmpeg'  # Adjust if needed
 from get_video_id import get_youtube_video_id
 
-# FFMPEG_PATH = './ffmpg'  # Adjust if needed
-FFMPEG_PATH = './ffmpg'
-# FFMPEG_PATH = shutil.which("ffmpeg")  # Adjust if needed
-# FFMPEG_PATH = '/opt/homebrew/bin/ffmpeg'  # Adjust if needed
+# FFMPEG_PATH = '/opt/homebrew/bin/ffmpeg'
+FFMPEG_PATH = shutil.which("ffmpeg")
 
 
 def download_video(url, output_folder, progress_callback):
